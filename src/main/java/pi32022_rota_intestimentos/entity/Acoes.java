@@ -1,15 +1,14 @@
-package pi32022_rota_intestimentos.model.entity;
+package pi32022_rota_intestimentos.entity;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 import java.time.LocalDate;
 
 @Entity
 @Data
-public class Fii {
+public class Acoes {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -17,7 +16,6 @@ public class Fii {
     @Column(nullable = false, length = 10)
     private LocalDate dataRegistro;
     @Column(nullable = false, length = 20)
-    private float valor;
-
+    private BigDecimal valor;
 
 }
