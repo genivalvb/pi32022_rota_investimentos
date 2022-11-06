@@ -7,8 +7,8 @@ import pi32022_rota_intestimentos.entity.Fii;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2022-11-06T16:37:55-0300",
-    comments = "version: 1.4.2.Final, compiler: javac, environment: Java 11.0.15.1 (Oracle Corporation)"
+    date = "2022-11-06T19:18:58-0300",
+    comments = "version: 1.4.2.Final, compiler: javac, environment: Java 11.0.11 (AdoptOpenJDK)"
 )
 public class FiiMapperImpl implements FiiMapper {
 
