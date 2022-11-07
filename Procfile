@@ -1,1 +1,1 @@
-web: java -jar -Dspring.profiles.active=dev target/pi32022_rota_investimentos-main.jar
+web: java -jar -Dspring.profiles.active=dev target/pi32022_rota_investimentos-main-1.0-SNAPSHOT.jar
