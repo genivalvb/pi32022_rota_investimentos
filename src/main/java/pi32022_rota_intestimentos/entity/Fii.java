@@ -32,12 +32,13 @@ public class Fii {
 
     public Fii() {}
 
-    public Fii(Long id, LocalDate data_registro, BigDecimal renda, String tipo, BigDecimal valor_investido) {
+    public Fii(Long id, LocalDate data_registro, BigDecimal renda, String tipo, BigDecimal valor_investido, String name) {
         this.id = id;
         this.data_registro = data_registro;
         this.renda = renda;
         this.tipo = tipo;
         this.valor_investido = valor_investido;
+        this.name = name;
     }
 
     public Long getId() {
@@ -80,17 +81,25 @@ public class Fii {
         this.valor_investido = valor_investido;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Fii)) return false;
         Fii fii = (Fii) o;
-        return Objects.equals(id, fii.id) && Objects.equals(data_registro, fii.data_registro) && Objects.equals(renda, fii.renda) && Objects.equals(tipo, fii.tipo) && Objects.equals(valor_investido, fii.valor_investido);
+        return Objects.equals(id, fii.id) && Objects.equals(data_registro, fii.data_registro) && Objects.equals(renda, fii.renda) && Objects.equals(tipo, fii.tipo) && Objects.equals(valor_investido, fii.valor_investido) && Objects.equals(name, fii.name);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, data_registro, renda, tipo, valor_investido);
+        return Objects.hash(id, data_registro, renda, tipo, valor_investido, name);
     }
 
     @Override
@@ -101,6 +110,7 @@ public class Fii {
                 ", renda=" + renda +
                 ", tipo='" + tipo + '\'' +
                 ", valor_investido=" + valor_investido +
+                ", name='" + name + '\'' +
                 '}';
     }
 }
