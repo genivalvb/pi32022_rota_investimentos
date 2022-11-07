@@ -1,1 +1,1 @@
-web: java -jar -Dspring.profiles.active=dev target/route-0.0.1-SNAPSHOT.jar
+web: java -jar -Dspring.profiles.active=dev target/pi32022_rota_investimentos-main.jar
